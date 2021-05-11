@@ -42,7 +42,7 @@ const Contact = () => {
     setuserData({name:'',email:'',phone:'',message:''})
 
    await fetch('https://hartajsingh.herokuapp.com/postData',{
-      mode:'no-cors',
+      mode:'cors',
       method:"POST",
       headers:{
         'Content-Type':'application/json'
