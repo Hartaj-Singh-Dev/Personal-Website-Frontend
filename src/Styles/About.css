@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+div.About {
+  height: 100vh;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+div.textAnimation {
+  padding: 3rem 0 1.5rem 3rem;
+}
+
+div.bioData {
+  display: flex;
+  height: 70vh;
+}
+
+div.data p{
+  height:7.5rem;
+  width: 80%;
+}
+div.aboutHeader {
+  height: 7.5rem;
+}
+
+div.dataCards{
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0 0 0;
+}
+
+
+div.bioData div.MyPic {
+  margin: 0 0 0 4rem;
+  width: 25%;
+}
+div.bioData div.data {
+  margin: 0 2rem 0 2rem;
+  width: 100%;
+}
+
+div.About div.ContactArrow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+div.data div.dataCards div.card {
+  height: 18rem;
+  width: 15rem;
+  background: rgba( 248, 248, 248, 0.30 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 13.0px );
+  -webkit-backdrop-filter: blur( 13.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+div.dataCards div.card div.cardDetails{
+    height: 13.5rem;
+    margin-top: 6px;
+}
+
+div.data{
+  font-family: 'Poppins';
+}
+
+div.dataCards div.card{
+  z-index: 1;
+}
+
+div.data p span::before{
+  content: "{Hartaj Singh}";
+}
+
+@media only screen and (max-width:650px){
+  div.bioData{
+    flex-direction: column;
+  }
+  div.About{
+    height:200vh;
+    width: 100vw;
+  }
+  div.textAnimation{
+    padding: 1.5rem 0 0rem 0rem;
+  }
+  div.bioData{
+    height:171vh
+  }
+  div.bioData div.data{
+    height: 132vh;
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+  div.bioData div.data p{
+    height:12.5rem;
+    font-size: 16.5px;
+    font-weight: 600;
+    width: 100vw;
+  }
+  div.bioData div.MyPic {
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 45vh;
+    margin: 0rem 0 1rem 0;
+  }
+  div.dataCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 108vh;
+    margin: 0 0 0 0;
+    justify-content: space-evenly;
+  }
+  div.aboutHeader{
+    height: 8.5rem;
+  }
+  div.aboutHeader div.textAnimation h1{
+    font-weight: 490;
+    font-size: 1.9rem;
+  }
+}
