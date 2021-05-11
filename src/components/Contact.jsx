@@ -46,6 +46,7 @@ const Contact = () => {
       headers:{
         'Content-Type':'application/json'
       },
+      mode:'cors',
       body:JSON.stringify(data)
     }).then((res)=>{ console.log(res)}).catch((err)=>{console.log(err);})
     }
