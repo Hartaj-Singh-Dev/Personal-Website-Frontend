@@ -37,8 +37,6 @@ const Contact = () => {
      phone:parseInt(phone),
      message:message
    }
-    console.log("Submitted");
-    alert("Thanku for your response I will try to reach out you as soon as possible")
     setuserData({name:'',email:'',phone:'',message:''})
 
    await fetch('https://hartajsingh.herokuapp.com/postData',{
@@ -47,8 +45,8 @@ const Contact = () => {
         'Content-Type':'application/json'
       },
       mode:'cors',
-      body:JSON.stringify(data)
-    }).then((res)=>{ console.log(res)}).catch((err)=>{console.log(err);})
+      body:JSON.stringify(data),
+    }).then((res)=>{ console.log(res.json())}).catch((err)=>{console.log(err);})
     }
   }
   return (
