@@ -40,11 +40,11 @@ const Contact = () => {
     setuserData({name:'',email:'',phone:'',message:''})
 
    await fetch('https://hartajsingh.herokuapp.com/postData',{
-      method:"POST",
+     mode:'cors',
+     method:"POST",
       headers:{
         'Content-Type':'application/json'
       },
-      mode:'cors',
       body:JSON.stringify(data),
     }).then((res)=>{ console.log(res.json())}).catch((err)=>{console.log(err);})
     }
