@@ -1,7 +1,7 @@
 {
   "name": "client",
-  "homepage": "https://hartajsingh.github.io/personalWebsite",
   "version": "0.1.0",
+  "homepage": "https://hartajsingh.github.io/Testing-Website/",
   "private": true,
   "proxy": "https://hartajsingh.herokuapp.com/",
   "dependencies": {
