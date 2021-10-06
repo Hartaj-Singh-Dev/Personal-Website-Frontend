@@ -14,9 +14,18 @@ const Navbar = () => {
         setnavbarClass(false);
       }
     }else if(window.innerWidth <= 650){
-        if (window.scrollY <= 490) {
+        if (window.scrollY <= 450) {
             setnavbarClass(false);
-        }else if(window.scrollY >=490 && window.scrollY <= 1830){
+        }else if(window.scrollY >=450 && window.scrollY <= 1830){
+            setnavbarClass(true);
+        } else{
+            setnavbarClass(false)
+        }
+    }
+    else if(window.innerWidth <= 450){
+        if (window.scrollY <= 450) {
+            setnavbarClass(false);
+        }else if(window.scrollY >=450 && window.scrollY <= 2200){
             setnavbarClass(true);
         } else{
             setnavbarClass(false)
@@ -29,31 +38,19 @@ const Navbar = () => {
     <React.Fragment>
       <div className={navbarClass ? "Navbar-active" : "Navbar"}>
         <nav className={navbarClass ? "nav-active" : "nav"}>
-          <Link to="about" spy={true} smooth={true} duration={100} delay={50}>
+          <Link to="about" spy={true} smooth={true} duration={50}>
             <span
-              className="navlink"
-              style={{ fontSize: "1.1rem", fontWeight: "500" }}
-            >
+              className="navlink" >
               About
             </span>
           </Link>
-          <Link to="home" spy={true} smooth={true} duration={100} delay={50}>
-            <span
-              style={{
-                fontFamily: "Mrs Saint Delafield",
-                fontSize: "1.9rem",
-                fontWeight: "600",
-                marginTop: "0px",
-              }}
-            >
+          <Link to="home" spy={true} smooth={true} duration={50} >
+            <span className="hartajsingh">
               Hartaj Singh
             </span>
           </Link>
-          <Link to="contact" spy={true} smooth={true} duration={100} delay={50}>
-            <span
-              className="navlink"
-              style={{ fontSize: "1.1rem", fontWeight: "500" }}
-            >
+          <Link to="contact" spy={true} smooth={true} duration={50} >
+            <span className="navlink">
               Contact Me
             </span>
           </Link>

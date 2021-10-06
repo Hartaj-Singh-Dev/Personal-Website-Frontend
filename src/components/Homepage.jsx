@@ -12,7 +12,7 @@ const Homepage = () => {
         <div className="homePage">
           <div className="name">
             <h1 className="myName">
-              HARTAJ <span style={{ marginLeft: "2rem" }}>SINGH</span>
+              HARTAJ <span className="SinghText">SINGH</span>
             </h1>
           </div>
           <div className="socialIcons">
@@ -41,6 +41,14 @@ const Homepage = () => {
              <i class="fab fa-linkedin fa-3x"></i>
             </a>
             <a
+              href="https://twitter.com/thehartajsingh"
+              target="_blank"
+              rel="noreferrer"
+              className="TwitterIcon"
+            >
+             <i class="fab fa-twitter fa-3x"></i>
+            </a>
+            <a
               href="https://discordapp.com/users/772455850392027147"
               target="_blank"
               rel="noreferrer"
@@ -51,9 +59,9 @@ const Homepage = () => {
             
           </div>
           <div className="Arrow" style={{flexDirection:'column'}}>
-            <h4 style={{color:'#fcfcfc',fontSize:'12px'}}>Read More</h4>
-            <Link to="about" spy={true} smooth={true} duration={100} delay={50}>
-              <IconButton>
+            <h4 className="Readmore">Read More</h4>
+            <Link to="about" spy={true} smooth={true} duration={50} >
+              <IconButton className="ArrowIcon">
                 <ArrowDownwardIcon></ArrowDownwardIcon>
               </IconButton>
             </Link>

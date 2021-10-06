@@ -11,6 +11,11 @@
 # production
 /build
 
+
+/client/src/HartajSinghSidhu.jpg
+/client/src/AnyConv.com__Favicon.jpg
+
+
 # misc
 /.DS_Store
 /.env.local

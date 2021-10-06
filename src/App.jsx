@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Error from './components/Error'
+import Error from './components/Error';
 
 
 function App() {

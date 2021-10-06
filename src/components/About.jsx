@@ -10,7 +10,7 @@ import MyPic from "../Asset/AnyConv.com__Favicon.jpg";
 const About = () => {
   const [TypeEffect, setTypeEffect] = useState(false);
   const typeEffect = () => {
-    if (window.scrollY >= 600) {
+    if (window.scrollY >= 550) {
       setTypeEffect(true);
     } else {
       setTypeEffect(false);
@@ -23,12 +23,12 @@ const About = () => {
         <div className="About">
           <div className="aboutHeader">
             <div className="textAnimation">
-              <h1 style={{ fontWeight: "490", fontSize: "2.1rem" }}>
+              <h1 className ="Type" >
                 {TypeEffect ? (
                   <Typewriter
                     onInit={(typewriter) => {
                       typewriter
-                        .pauseFor(100)
+                        .pauseFor(80)
                         .pasteString(" Hi 👋,Myself ")
                         .typeString(
                           "<strong style={{fontWeight:'695'}}> Hartaj Singh </strong> "
@@ -57,104 +57,71 @@ const About = () => {
               <img
                 src={MyPic}
                 alt=""
+                className="MyPicInPersonalWebsite"
                 loading="lazy"
-                style={{ height: "15rem", width: "15rem", borderRadius: "50%" }}
               />
             </div>
             <div className="data">
+              <div className="BioData">
               <p>
                 So as you already know my name
                 <span>
-              
                   ,I am Currenly mastering full-stack web development and
-                  business management
+                  business management .
                 </span>
-                So over last year, I’ve invested time in working on what
+                 So over last year, I’ve invested time in working on what
                 interests me .I recently worked on project of Instagram clone
                 and a few extra exciting projects,you could take a look at my
                 Github also . I even have additionally try and learn about
-                Businesses and Finances
+                Businesses and Finances.
+                Lorem ipsum dolor sit amet consectetur 
+
+
+             
               </p>
+               </div>
               <div
                 className="dataCards"
               >
                 <div className="card">
-                  <div
-                    className="cardHead"
-                    style={{
-                      textAlign: "center",
-                      fontFamily: "Roboto",
-                      marginTop: "0.2rem",
-                    }}
-                  >
+                  <div className="cardHead">
                     <h2>Skills</h2>
                   </div>
-                  <div
-                    className="cardsubHeader"
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-around",
-                      fontFamily: "Roboto",
-                    }}
-                  >
+                  <div className="cardsubHeader">
                   
                     <div>Skills</div> Effeciency
                   </div>
-                  <div className="cardDetails" style={{ display: "flex" }}>
-                    <div
-                      className="skills"
-                      style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "space-between",
-                        paddingLeft: "0.5rem",
-                        width: "09rem",
-                      }}
-                    >
-                      <div
-                        className="skillReact"
-                        style={{ height: "1.7rem", fontFamily: "Roboto" }}
-                      >
+                  <div className="cardDetails" >
+                    <div className="skills">
+                      <div  className="skillReact">
                         <i
                           class="fab fa-react fa-lg"
                           style={{ color: "#0c73d3" }}
                         ></i>
                         --React
                       </div>
-                      <div
-                        className="skillHTML"
-                        style={{ height: "1.7rem", fontFamily: "Roboto" }}
-                      >
+                      <div className="skillHTML" >
                         <i
                           class="fab fa-html5 fa-lg"
                           style={{ color: "#f75312" }}
                         ></i>
                         --HTML
                       </div>
-                      <div
-                        className="skillCSS"
-                        style={{ height: "1.7rem", fontFamily: "Roboto" }}
-                      >
+                      <div  className="skillCSS">
                         <i
                           class="fab fa-css3-alt fa-lg"
                           style={{ color: "blue" }}
                         ></i>
                         --CSS
                       </div>
-                      <div
-                        className="skillJS"
-                        style={{ height: "1.7rem", fontFamily: "Roboto" }}
-                      >
+                      <div  className="skillJS" >
                         <i
                           class="fab fa-js fa-lg"
                           style={{ color: "#ffdb0f" }}
                         ></i>
                         --javascript
                       </div>
-                      <div
-                        className="skillNode"
-                        style={{ height: "1.7rem", fontFamily: "Roboto" }}
-                      >
+                      <div className="skillNode">
                      
                         <i
                           class="fab fa-node-js fa-lg"
@@ -162,10 +129,7 @@ const About = () => {
                         ></i>
                         --node js
                       </div>
-                      <div
-                        className="skillDatabse"
-                        style={{ height: "1.7rem", fontFamily: "Roboto" }}
-                      >
+                      <div className="skillDatabse">
                        
                         <i
                           class="fas fa-database fa-lg"
@@ -265,13 +229,11 @@ const About = () => {
             </div>
           </div>
           <div className="ContactArrow">
-            {/* <h4>Read More</h4> */}
             <Link
               to="contact"
               spy={true}
               smooth={true}
-              duration={100}
-              delay={50}
+              duration={50}
             >
               <IconButton>
                 <ArrowDownwardIcon></ArrowDownwardIcon>

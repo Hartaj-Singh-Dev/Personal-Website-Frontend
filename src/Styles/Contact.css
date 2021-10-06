@@ -190,6 +190,11 @@ div.ErrorandButton button.submitButton{
 div.HomeArrow{
     margin: -7px 0 2px 0;
 }
+div.contactform h2.contactFormHeading{
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+}
 
 
 /* Responsive */
@@ -204,6 +209,22 @@ div.HomeArrow{
     div.ErrorandButton button.submitButton{
         margin:0.7rem 0 0 0rem;
     }
+}
+
+@media only screen and (max-width:450px){
+    div.contactform{
+        width: 97vw;
+    }
+    div.ErrorandButton div.error{
+        height: 1.5rem;
+        width: 7.3rem;
+    }
+    div.ErrorandButton button.submitButton{
+        margin:0.7rem 0 0 0rem;
+    }
+    div.contactform h2.contactFormHeading{
+    margin: 0.5rem 0 0.5rem 0;
+   }
 }
 
 /* Responsive */

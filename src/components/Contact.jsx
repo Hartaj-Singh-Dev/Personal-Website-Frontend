@@ -40,7 +40,7 @@ const Contact = () => {
     setuserData({name:'',email:'',phone:'',message:''})
 
    await fetch('https://hartajsingh.herokuapp.com/postData',{
-     mode:'no-cors',
+     mode:'cors',
      method:"POST",
       headers:{
         'Content-Type':'application/json'
@@ -55,7 +55,7 @@ const Contact = () => {
       <Element id="contact" name="contact">
         <section className="contact">
           <div className="contactform">
-          <h2 className="contactFormHeading" style={{textAlign:'center' ,color:'white' ,marginBottom:'1rem'}}>Get In Touch</h2>
+          <h2 className="contactFormHeading">Get In Touch</h2>
             <div className="contactForm" style={{border:'3px solid #fcfcfc' ,borderRadius:'7px' }}>
               <form method="POST">
                 <div className="Input">
@@ -119,7 +119,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="HomeArrow">
-            <Link to="home" spy={true} smooth={true} duration={100} delay={50}>
+            <Link to="home" spy={true} smooth={true} duration={50}>
               <IconButton>
                 <ArrowUpwardIcon></ArrowUpwardIcon>
               </IconButton>
@@ -127,7 +127,7 @@ const Contact = () => {
             <h4 style={{color:'#fcfcfc' ,fontSize:'10.5px',marginTop:'-9px'}}>Go to top</h4>
           </div>
           <div>
-            <span>
+            <span style={{color:"white"}}>
             @2021 , Hartaj Singh Production . All rights reserved
             </span>
           </div>

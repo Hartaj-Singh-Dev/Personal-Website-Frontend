@@ -10,6 +10,12 @@ div.homePage {
   animation: BackgroundAnimation 18s ease infinite;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* align-items:flex-end; */
+  position: relative;
+   z-index: 1;
 }
 
 @-webkit-keyframes BackgroundAnimation {
@@ -49,15 +55,17 @@ div.homePage {
 div.name{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    margin: 7rem 0 0 0rem;
     width: 100%;
     
 }
+/* 
+div.name h1.myName span.SinghText{
+  /* margin-left: 2rem; */
+/* } */ 
 
 h1.myName{
-    font-size: 11.5rem;
-   margin: 0 0 0 1rem;
+    font-size: 13vw;
+   margin: 0 0 0 0rem;
     background: linear-gradient(315deg, #db1f48, #55b7f7 );
     background-size: 400% 400%;
 
@@ -70,7 +78,7 @@ h1.myName{
     font-family: 'Oswald';
 }
 h1.myName::before{
-    font-size: 13rem;
+    font-size: 15lsvw;
     content: "<";
    /* margin: 0 0 0 5rem; */
     background: linear-gradient(315deg, #db1f48, #55b7f7 );
@@ -85,7 +93,7 @@ h1.myName::before{
     font-family: 'Oswald';
 }
 h1.myName::after{
-    font-size: 13rem;
+    font-size: 15lsvw;
     content: "/>";
    /* margin: 0 0 0 5rem; */
     background: linear-gradient(315deg, #db1f48, #55b7f7 );
@@ -120,8 +128,8 @@ div.socialIcons{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 20rem;
-  margin: 3rem 0 0 32rem;
+  width: 30%;
+  /* margin: 3rem 0 0 30rem; */
 }
 
 div.socialIcons a{
@@ -145,14 +153,26 @@ div.socialIcons a.LinkedinIcon i:hover{
 div.socialIcons a.GitHubIcon i:hover{
   color: black;
 }
+div.socialIcons a.TwitterIcon i:hover{
+  color:#1da1f2;
+}
 
 
 div.socialIcons a i{
   color: #ffff;
+  font-size: 4vw;
+}
+
+div.Arrow h4.Readmore{
+  font-size: 1vw;
+  color: #fcfcfc;
+}
+div.Arrow .ArrowIcon{
+  font-size: 4vw;
 }
 
 div.Arrow{
-  height: 4rem;
+  height: 2vw;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -183,6 +203,27 @@ div.Arrow .MuiSvgIcon-root{
     width: 100vw;
     padding: 0 2rem;
     margin: 2rem 0 0 0;
+  }
+  div.Arrow{
+    margin:3.5rem 0 0 0;
+  }
+}
+
+@media only screen and (max-width:450px){
+  div.homePage{
+    width: 100vw;
+    height: 100vh;
+  }
+  div.name h1.myName ,h1.myName::after ,h1.myName::before{
+    font-size: 6.7rem;
+  }
+  div.name{
+    margin: 6rem 0 0 0rem;
+  }
+  div.socialIcons{
+    width: 100vw;
+    padding: 0 1rem;
+    margin: 4rem 0 0 0;
   }
   div.Arrow{
     margin:3.5rem 0 0 0;
