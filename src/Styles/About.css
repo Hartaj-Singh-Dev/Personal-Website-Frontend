@@ -40,7 +40,7 @@ div.aboutHeader {
 div.dataCards{
   display: flex;
   justify-content: space-around;
-  margin: 1rem 0 0 0;
+  /* margin: 1rem 0 0 0; */
 }
 
 img.MyPicInPersonalWebsite{
@@ -71,7 +71,7 @@ div.About div.ContactArrow {
 }
 
 div.data div.dataCards div.card {
-  height: 25vw;
+  height: 28vw;
   width: 20vw;
   background: rgba( 248, 248, 248, 0.30 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -79,10 +79,15 @@ div.data div.dataCards div.card {
   -webkit-backdrop-filter: blur( 13.0px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
 }
 div.dataCards div.card div.cardDetails{
-    height: 13.5rem;
-    margin-top: 6px;
+    height: 80%;
+   
 }
 
 div.data{
@@ -102,7 +107,6 @@ div.data p span::before{
 div.card div.cardHead{
   text-align: center;
   font-family: Roboto;
-  margin-top: 0.2rem;
 }
 div.card div.cardsubHeader{
   display: flex;
@@ -110,9 +114,37 @@ div.card div.cardsubHeader{
   font-family: "Roboto";
 }
 
+div.subHead{
+  text-align: center;
+  font-family: "Roboto";
+}
+
 div.card div.cardDetails {
   display: flex;
+  height: 80%;
+    display: flex;
+    justify-content: space-evenly;
 }
+
+div.skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+   font-size: 1.3vw;
+  width: 60%;
+}
+
+div.effeicency{
+  height: 100%;
+  width: 20%;
+  display: flex;
+  font-size: 1.4vw;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+
 
 div.card div.skills{
   display:flex;
@@ -122,9 +154,26 @@ div.card div.skills{
   width: 09rem;
 }
 
-div.skillReact + div.skillHTML +  div.skillCSS + div.skillJS + div.skillNode + div.skillDatabase {
+div.skillReact + div.skillHTML +  div.skillCSS + div.skillJS + div.skillNode + div.skillDatabase + div.skillNextjs{
   height: 1.7rem;
   font-family: "Roboto";
+  
+}
+
+div.cardDetailsOfEducation{
+  height: 85%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    justify-content: space-around
+}
+
+div.subHeadFullData{
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.5vw;
+  font-weight: 599;
 }
 
 /* Card CSS */

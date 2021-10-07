@@ -129,6 +129,9 @@ const About = () => {
                         ></i>
                         --node js
                       </div>
+                      <div className="skillNexjs">
+                        --Next.js
+                      </div>
                       <div className="skillDatabse">
                        
                         <i
@@ -138,55 +141,27 @@ const About = () => {
                         --mongoDb
                       </div>
                     </div>
-                    <div
-                      className="effeicency"
-                      style={{
-                        height: "13.5rem",
-                        width: "5.5rem",
-                        display: "flex",
-                        justifyContent: "space-between",
-                        flexDirection: "column",
-                        marginLeft: "0.2rem",
-                      }}
-                    >
-                      <div style={{ color: "green" }}>80%</div>
-                      <div style={{ color: "green" }}>95%</div>
+                    <div className="effeicency" >
                       <div style={{ color: "green" }}>90%</div>
-                      <div style={{ color: "red" }}>75%</div>
+                      <div style={{ color: "green" }}>95%</div>
+                      <div style={{ color: "green" }}>95%</div>
+                      <div style={{ color: "green" }}>85%</div>
                       <div style={{ color: "green" }}>80%</div>
+                      <div style={{ color: "green" }}>90%</div>
                       <div style={{ color: "green" }}>80%</div>
                     </div>
                   </div>
                 </div>
                 <div className="card">
-                  <div
-                    className="cardHead"
-                    style={{
-                      textAlign: "center",
-                      fontFamily: "Roboto",
-                      marginTop: "0.2rem",
-                    }}
-                  >
-                   
+                  <div className="cardHead">
                     <h2>Education</h2>
                   </div>
-                  <div className="cardDetails">
-                    <div
-                      className="subHead"
-                      style={{ textAlign: "center", fontFamily: "Roboto" }}
-                    >
+                  <div className="cardDetailsOfEducation">
+                    <div className="subHeadFullData" >
                      
                       <i class="fas fa-school"></i> Formal Education
-                    </div>
-                    <div
-                      className="tradiontnal"
-                      style={{
-                        letterSpacing: "-0.55px",
-                        height: "3.5rem",
-                        marginLeft: "5px",
-                      }}
-                    >
-                      <div className="education" style={{ marginTop: "5px" }}>
+                      <div  className="tradiontnal">
+                      <div className="education" >
                      
                         <span style={{ color: "green" }}>Passed</span> - 10th
                         class CICSE
@@ -194,16 +169,18 @@ const About = () => {
                       <div className="education">
                       
                         <span style={{ color: "red" }}>Currently</span> -
-                        non-med 11th class ISC
+                        (PCM) 11th class ISC
                       </div>
                     </div>
+                    </div>
+                   
                     <div
-                      className="subHead"
+                      className="subHeadFullData"
                       style={{ textAlign: "center", fontFamily: "Roboto" }}
                     >
                       Self Taught Education
-                    </div>
-                    <div
+
+                      <div
                       className="SelfEducation"
                       style={{
                         fontFamily: "Roboto",
@@ -223,6 +200,8 @@ const About = () => {
                       <div className="education">Leadership</div>
                       <div className="education">Programming</div>
                     </div>
+                    </div>
+                  
                   </div>
                 </div>
               </div>
