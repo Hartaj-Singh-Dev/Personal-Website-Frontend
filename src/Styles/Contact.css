@@ -3,12 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@650&display=swap');
 
 section.contact{
-    height: 100vh;
+    height: 105vh;
     width: 100%;
     display: flex;
     text-align: center;
     align-items: center;
     flex-direction: column;
+    justify-content: flex-end;
     background-color: coral;
     background: linear-gradient(314deg,#333652, #e6685c);
     background-size: 400% 400%;
@@ -34,9 +35,12 @@ section.contact{
     100%{background-position:0% 7%}
 } 
 div.contactform{
-    height: 88vh;
-    width: 33vw;
-    padding: 3.5rem 0 0 0;
+    min-height: 80%;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 div.contactForm{
@@ -44,9 +48,12 @@ div.contactForm{
     margin: 0rem 0 0 4rem;
     height:70vh;
     width: 40vw; */
-    height: 69.5vh;
+    /* min-height: 90%; */
+    color: #fcfcfc;
+    min-width: 100%;
     color:#fcfcfc;
 }
+   
 div.contactForm form{
     display: flex;
     flex-direction: column;
@@ -93,7 +100,7 @@ div.contactForm form div.TextAreaInput textarea{
     border: 2px solid #fcfcfc;
     border-radius: 8px;
     outline-width: 0;
-    resize: vertical;
+    /* resize: vertical; */
     color: #fcfcfc;
     font-size: large;
     height: 11rem;
@@ -117,9 +124,10 @@ div.contactForm form div.Input input{
 } */
 
 
-div.contactForm h2.contactFormHeading{
+h2.contactFormHeading{
     font-family: 'Roboto';
     font-weight: 600;
+    font-size: 2vw;
 }
 div.contactForm h2.formHeading{
     font-weight: 700;
@@ -193,7 +201,6 @@ div.HomeArrow{
 div.contactform h2.contactFormHeading{
     text-align: center;
     color: white;
-    margin-bottom: 1rem;
 }
 
 
