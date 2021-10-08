@@ -48,7 +48,7 @@ div.contactForm{
     margin: 0rem 0 0 4rem;
     height:70vh;
     width: 40vw; */
-    /* min-height: 90%; */
+    min-height: 90%;
     color: #fcfcfc;
     min-width: 100%;
     color:#fcfcfc;
@@ -58,24 +58,32 @@ div.contactForm form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    height: 92%;
 }
 
 div.contactForm form div.Input{
-    height: 4rem;
+    height: 6vw;
     padding-top: 0.4rem;
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+
+div.Input label{
+    font-size: 1.5vw;
+}
 div.contactForm form div.Input input{
     margin-top: 0.5rem;
-    padding: 0.3rem 0 0.3rem 0.1rem;
+    padding: 0.3rem 0 0.3rem 0.4rem;
     border: none;
     width: 100%;
     outline-width: 0;
+    height: 60%;
     background: transparent;
     color: #fcfcfc;
+    font-size: 1.4vw;
     border: 2px solid #fcfcfc;
     border-radius: 8px;
 }
@@ -84,10 +92,10 @@ div.contactForm form div.Input input:focus{
 }
 
 div.contactForm form div.TextAreaInput{
-    height: 11.2rem;
+    height: 43%;
     display: flex;
     margin: 0.4rem 0 0 0;
-    width: 96%;
+    width: 95%;
     flex-direction: column;
     align-items: flex-start;
 }
@@ -102,14 +110,19 @@ div.contactForm form div.TextAreaInput textarea{
     outline-width: 0;
     /* resize: vertical; */
     color: #fcfcfc;
-    font-size: large;
-    height: 11rem;
+    padding: 0 0 0 0.2rem;
+
+    font-size: 1.4vw;
+    height: 100%;
 }
 
 div.contactForm form div.TextAreaInput textarea:active{
    border: 2.5px solid #fcfcfc;
 }
 
+div.TextAreaInput label{
+    font-size: 1.4vw;
+}
 
 /* 
 div.contactForm form div.Input input{
@@ -186,14 +199,20 @@ div.contactForm button.submitButton:active{
 div.ErrorandButton{
     width: 100%;
     display: flex;
+    justify-content: flex-start;
 }
 div.ErrorandButton div.error{
     height: 1rem;
-    width: 5.4rem;
+    width: 30%;
+}
+div.submitButton{
+    width:40%;
 }
 
-div.ErrorandButton button.submitButton{
-    margin:0.7rem 0 0 3.8rem;
+div.ErrorandButton div.submitButton button.submitButton{
+    height: 4vw;
+    width: 13vw;
+    font-size: 1.5vw;
 }
 div.HomeArrow{
     margin: -7px 0 2px 0;

@@ -105,6 +105,7 @@ const Contact = () => {
                   <div className="error">
                 <h1 style={{fontSize:'14px',color:'red'}}>{Error}</h1>
                 </div>
+                <div className="submitButton">
                 <button
                   type="submit"
                   className="submitButton"
@@ -114,6 +115,7 @@ const Contact = () => {
                 >
                   Get In Touch
                 </button>
+                </div>
                 </div>
               </form>
             </div>
