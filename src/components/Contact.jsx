@@ -39,7 +39,7 @@ const Contact = () => {
    }
     setuserData({name:'',email:'',phone:'',message:''})
 
-   await fetch('https://hartajsingh.herokuapp.com/postData',{
+   await fetch(process.env.REACT_BACKEND_FORM,{
      mode:'cors',
      method:"POST",
       headers:{

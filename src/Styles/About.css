@@ -9,13 +9,14 @@ div.About {
   position: relative;
   background-color: #f0f0f0;
 }
-div.textAnimation {
+/* div.textAnimation {
   padding: 3rem 0 1.5rem 3rem;
-}
+} */
 
 div.textAnimation h1.Type{
   font-size: 2vw;
   text-align: center;
+  padding: 4% 0 0 0;
   font-weight: 490;
   font-family: "Montserrat";
 }
@@ -70,10 +71,14 @@ div.About div.ContactArrow {
   display: flex;
   justify-content: center;
 }
+div.dataCards{
+  height: 60%;
+}
+
 
 div.data div.dataCards div.card {
-  height: 28vw;
-  width: 20vw;
+  height: 95%;
+  width: 27%;
   background: rgba( 248, 248, 248, 0.30 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 13.0px );
@@ -108,11 +113,13 @@ div.data p span::before{
 div.card div.cardHead{
   text-align: center;
   font-family: Roboto;
+  font-size: 1.2vw;
 }
 div.card div.cardsubHeader{
   display: flex;
   justify-content: space-around;
   font-family: "Roboto";
+  font-size: 1.3vw;
 }
 
 div.subHead{
@@ -120,10 +127,17 @@ div.subHead{
   font-family: "Roboto";
 }
 
+div.subHeadFullData h1.education{
+  text-decoration: underline;
+  font-size: 1.3vw;
+  
+}
+
 div.card div.cardDetails {
   display: flex;
   height: 80%;
     display: flex;
+    width: 100%;
     justify-content: space-evenly;
 }
 
@@ -152,22 +166,30 @@ div.card div.skills{
   flex-direction: column;
   justify-content: space-between;
   padding-left: 0.5rem;
-  width: 09rem;
 }
 
 div.skillReact + div.skillHTML +  div.skillCSS + div.skillJS + div.skillNode + div.skillDatabase + div.skillNextjs{
-  height: 1.7rem;
+  height: 1.4rem;
   font-family: "Roboto";
   
 }
 
 div.cardDetailsOfEducation{
-  height: 85%;
+  height: 90%;
     display: flex;
     align-content: center;
     flex-direction: column;
     /* justify-content: space-between; */
     justify-content: space-around
+}
+
+div.SelfEducation{
+  font-family: "Roboto";
+  color:green;
+  display: "flex";
+  flex-direction: "column";
+  align-items: center;
+  justify-content: "space-around";
 }
 
 div.subHeadFullData{
@@ -216,6 +238,10 @@ div.subHeadFullData{
     display: flex;
     justify-content: center;
   }
+  div.cards{
+    height:30%;
+    width: 50%;
+  }
   div.MyPic img{
     height: 50vw;
     width: 50vw;
@@ -227,10 +253,7 @@ div.subHeadFullData{
     height: 65%;
     justify-content: space-evenly;
   }
-  div.card{
-    height: 44%;
-    width: 54%;
-  }
+
   div.aboutHeader{
     height: 13%;
     display: flex;
@@ -240,4 +263,5 @@ div.subHeadFullData{
     font-weight: 490;
     font-size: 1.9rem;
   }
+
 }

@@ -11,7 +11,7 @@ section.contact{
     scroll-snap-align: start;
     scroll-snap-stop: always;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     background-color: coral;
     background: linear-gradient(314deg,#333652, #e6685c);
     background-size: 400% 400%;

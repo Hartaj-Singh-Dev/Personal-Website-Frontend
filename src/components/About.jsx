@@ -155,9 +155,9 @@ const About = () => {
                     <h2>Education</h2>
                   </div>
                   <div className="cardDetailsOfEducation">
-                    <div className="subHeadFullData" >
+                    <div className="subHeadFullData">
                      
-                      <i class="fas fa-school"></i> Formal Education
+                      <i class="fas fa-school"></i> <h1 className="education">Formal Education </h1>
                       <div  className="tradiontnal">
                       <div className="education" >
                      
@@ -176,20 +176,10 @@ const About = () => {
                       className="subHeadFullData"
                       style={{ textAlign: "center", fontFamily: "Roboto" }}
                     >
-                      Self Taught Education
+                    <h1 className="education">  Self Taught Education </h1>
 
                       <div
-                      className="SelfEducation"
-                      style={{
-                        fontFamily: "Roboto",
-                        color: "green",
-                        height: "8.5rem",
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "space-around",
-                        marginLeft: "1rem",
-                      }}
-                    >
+                      className="SelfEducation" >
                       <div className="education" style={{ marginTop: "5px" }}>
                         Entrepreneurship
                       </div>

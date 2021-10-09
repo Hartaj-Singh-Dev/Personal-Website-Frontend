@@ -1,6 +1,6 @@
 
 html{
-  scroll-snap-type: y ;
+  scroll-snap-type: y proximity;
 }
 
 *,*::after,*::before{
