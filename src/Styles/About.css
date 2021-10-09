@@ -186,44 +186,55 @@ div.subHeadFullData{
   }
   div.About{
     height:200vh;
-    width: 100vw;
+    max-width: 100%;
+    width: 100%;
   }
   div.textAnimation{
-    padding: 1.5rem 0 0rem 0rem;
+    padding: 8% 0 0rem 0rem;
   }
   div.bioData{
-    height:171vh
+    height: 83%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
   }
   div.bioData div.data{
-    height: 132vh;
-    margin: 0 0 0 0;
+    height: 80%;
     display: flex;
+    width: 100%;
     flex-direction: column;
   }
   div.bioData div.data p{
-    height:12.5rem;
-    font-size: 16.5px;
+    font-size: 1rem;
     font-weight: 600;
-    width: 100vw;
+    width: 100%;
+    padding: 0 4% 0 4%;
   }
   div.bioData div.MyPic {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     display: flex;
     justify-content: center;
-    height: 45vh;
-    margin: 0rem 0 1rem 0;
+  }
+  div.MyPic img{
+    height: 50vw;
+    width: 50vw;
   }
   div.dataCards{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 108vh;
-    margin: 0 0 0 0;
+    height: 65%;
     justify-content: space-evenly;
   }
+  div.card{
+    height: 44%;
+    width: 54%;
+  }
   div.aboutHeader{
-    height: 8.5rem;
+    height: 13%;
+    display: flex;
+    align-items: center;
   }
   div.aboutHeader div.textAnimation h1{
     font-weight: 490;

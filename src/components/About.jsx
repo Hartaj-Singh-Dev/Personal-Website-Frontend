@@ -80,9 +80,7 @@ const About = () => {
              
               </p>
                </div>
-              <div
-                className="dataCards"
-              >
+              <div className="dataCards">
                 <div className="card">
                   <div className="cardHead">
                     <h2>Skills</h2>

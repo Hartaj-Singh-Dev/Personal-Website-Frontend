@@ -197,20 +197,21 @@ div.Arrow .MuiSvgIcon-root{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
   }
   div.name{
     width: 90%;
   }
 
   h1.myName{
-    font-size: 7rem;
+    font-size: 6.5rem;
 }
 h1.myName::before{
-    font-size: 7.5rem;
+    font-size: 7rem;
    
 }
 h1.myName::after{
-    font-size: 7.5rem;
+    font-size: 7rem;
 }
 
 div.socialIcons{
