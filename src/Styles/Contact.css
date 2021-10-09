@@ -8,6 +8,8 @@ section.contact{
     display: flex;
     text-align: center;
     align-items: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
     flex-direction: column;
     justify-content: flex-end;
     background-color: coral;

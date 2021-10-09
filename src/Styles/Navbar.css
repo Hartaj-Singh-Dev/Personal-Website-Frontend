@@ -103,7 +103,7 @@ div.Navbar-active {
 
 /* Responsive */
 @media only screen and (max-width: 650px) {
-  div.Navbar {
+  /* div.Navbar {
     height: 3.3rem;
   }
   nav.nav {
@@ -117,24 +117,38 @@ div.Navbar-active {
   }
   div.Navbar-active nav.nav-active span.navlink:hover {
     border-bottom: 2.1px solid white;
-  }
+  } */
 }
 
-@media only screen and (max-width: 460px) {
-  div.Navbar {
-    height: 3.3rem;
+@media only screen and (max-width: 550px) {
+  span.navlink{
+    font-size: 1rem;
+    font-weight: 550;
+    font-family: "Poppins";
   }
+  
+  span.hartajsingh{
+    font-family: "Mrs Saint Delafield";
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
   nav.nav {
-    width: 100%;
+    display: flex;
+    color: rgb(31, 31, 31);
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
   }
-  div.Navbar-active {
-    height: 3.3rem;
+  
+  nav.nav-active {
+    display: flex;
+    color: #fcfcfc;
+    align-items: center;
+    margin: 0px 0 0 0;
+    width: 90%;
+    justify-content: space-between;
   }
-  div.Navbar nav.nav span.navlink:hover {
-    border-bottom: 2.1px solid black;
-  }
-  div.Navbar-active nav.nav-active span.navlink:hover {
-    border-bottom: 2.1px solid white;
-  }
+  
 }
 /* Responsive */

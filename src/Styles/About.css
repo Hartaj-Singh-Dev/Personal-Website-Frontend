@@ -5,6 +5,7 @@
 div.About {
   height: 120vh;
   width: 100%;
+  scroll-snap-align: start;
   position: relative;
   background-color: #f0f0f0;
 }

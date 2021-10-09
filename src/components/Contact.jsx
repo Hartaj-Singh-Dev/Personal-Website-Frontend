@@ -123,7 +123,7 @@ const Contact = () => {
           <div className="HomeArrow">
             <Link to="home" spy={true} smooth={true} duration={50}>
               <IconButton>
-                <ArrowUpwardIcon></ArrowUpwardIcon>
+                <ArrowUpwardIcon fontSize="large"></ArrowUpwardIcon>
               </IconButton>
             </Link>
             <h4 style={{color:'#fcfcfc' ,fontSize:'10.5px',marginTop:'-9px'}}>Go to top</h4>

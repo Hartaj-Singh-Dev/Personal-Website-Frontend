@@ -215,7 +215,7 @@ const About = () => {
               duration={50}
             >
               <IconButton>
-                <ArrowDownwardIcon></ArrowDownwardIcon>
+                <ArrowDownwardIcon fontSize="large"></ArrowDownwardIcon>
               </IconButton>
             </Link>
           </div>

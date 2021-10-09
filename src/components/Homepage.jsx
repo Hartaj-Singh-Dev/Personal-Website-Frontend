@@ -62,7 +62,7 @@ const Homepage = () => {
             <h4 className="Readmore">Read More</h4>
             <Link to="about" spy={true} smooth={true} duration={50} >
               <IconButton className="ArrowIcon">
-                <ArrowDownwardIcon></ArrowDownwardIcon>
+                <ArrowDownwardIcon fontSize="large"></ArrowDownwardIcon>
               </IconButton>
             </Link>
           </div>

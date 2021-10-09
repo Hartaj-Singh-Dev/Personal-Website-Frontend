@@ -2,6 +2,7 @@
 
 div.homePage {
   height: 100vh;
+  scroll-snap-align: start;
   width: 100%;
   background: linear-gradient(146deg, #db1f48, #55b7f7);
   background-size: 400% 400%;
@@ -188,45 +189,47 @@ div.Arrow .MuiSvgIcon-root{
 }
 
 /* Responsive */
-@media only screen and (max-width:650px){
-  div.homePage{
-    width: 100vw;
-    height: 100vh;
-  }
-  div.name h1.myName ,h1.myName::after ,h1.myName::before{
-    font-size: 7rem;
+
+
+@media only screen and (max-width:600px){
+  div.homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   div.name{
-    margin: 4rem 0 0 2rem;
+    width: 90%;
   }
-  div.socialIcons{
-    width: 100vw;
-    padding: 0 2rem;
-    margin: 2rem 0 0 0;
-  }
-  div.Arrow{
-    margin:3.5rem 0 0 0;
-  }
+
+  h1.myName{
+    font-size: 7rem;
+}
+h1.myName::before{
+    font-size: 7.5rem;
+   
+}
+h1.myName::after{
+    font-size: 7.5rem;
 }
 
-@media only screen and (max-width:450px){
-  div.homePage{
-    width: 100vw;
-    height: 100vh;
-  }
-  div.name h1.myName ,h1.myName::after ,h1.myName::before{
-    font-size: 6.7rem;
-  }
-  div.name{
-    margin: 6rem 0 0 0rem;
-  }
-  div.socialIcons{
-    width: 100vw;
-    padding: 0 1rem;
-    margin: 4rem 0 0 0;
-  }
-  div.Arrow{
-    margin:3.5rem 0 0 0;
-  }
+div.socialIcons{
+  width: 90%;
+  padding: 1% 0 0 0 ;
+}
+
+div.socialIcons a i{
+  color: #ffff;
+  font-size: 2.8rem;
+}
+
+div.Arrow{
+  height: 4.5rem;
+}
+
+div.Arrow h4.Readmore{
+  font-size: 0.6rem;
+}
+
 }
 /* Responsive */
