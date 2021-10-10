@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@650&display=swap');
 
 section.contact{
-    height: 105vh;
+    height: 110vh;
     width: 100%;
     display: flex;
     text-align: center;
@@ -94,7 +94,7 @@ div.contactForm form div.Input input:focus{
 }
 
 div.contactForm form div.TextAreaInput{
-    height: 43%;
+    height: 55%;
     display: flex;
     margin: 0.4rem 0 0 0;
     width: 95%;
@@ -107,6 +107,7 @@ div.contactForm form div.TextAreaInput textarea{
     width: 100%;
     margin-top: 0.4rem;
     border: none;
+    height: 100%;
     border: 2px solid #fcfcfc;
     border-radius: 8px;
     outline-width: 0;
@@ -226,33 +227,63 @@ div.contactform h2.contactFormHeading{
 
 
 /* Responsive */
-@media only screen and (max-width:650px){
-    div.contactform{
-        width: 80vw;
-    }
-    div.ErrorandButton div.error{
-        height: 1.5rem;
-        width: 7.3rem;
-    }
-    div.ErrorandButton button.submitButton{
-        margin:0.7rem 0 0 0rem;
-    }
-}
+
 
 @media only screen and (max-width:450px){
     div.contactform{
-        width: 97vw;
+        width: 95%;
+        min-height: 50%;
+         height: 75%;
     }
-    div.ErrorandButton div.error{
-        height: 1.5rem;
-        width: 7.3rem;
+
+    h2.contactFormHeading {
+        font-size: 1.5rem;
     }
-    div.ErrorandButton button.submitButton{
-        margin:0.7rem 0 0 0rem;
+
+    div.contactForm {
+        min-height: 96%;
+        height: 93%;
     }
-    div.contactform h2.contactFormHeading{
-    margin: 0.5rem 0 0.5rem 0;
-   }
+    div.contactForm form {
+        height: 100%;
+    }
+    div.Input input{
+        margin-top: 0;
+        height: 90%;
+        font-size: 1rem;
+    }
+    div.contactForm form div.Input input{
+        margin-top: 0;
+        height: 90%;
+        font-size: 1rem;
+    }
+    div.Input{
+        height: 3.5rem;
+    }
+    div.Input label{
+        font-size: 1rem;
+    }
+
+    div.contactForm form div.Input{
+        height: 3rem;
+    }
+
+    div.contactForm form div.TextAreaInput{
+        height: 40%;
+    }
+
+    div.TextAreaInput label {
+        font-size: 1rem;
+    }
+
+    div.ErrorandButton div.submitButton button.submitButton {
+        height: 70%;
+        width: 80%;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+    
+
 }
 
 /* Responsive */

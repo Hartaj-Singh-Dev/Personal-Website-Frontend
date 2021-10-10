@@ -238,10 +238,6 @@ div.subHeadFullData{
     display: flex;
     justify-content: center;
   }
-  div.cards{
-    height:30%;
-    width: 50%;
-  }
   div.MyPic img{
     height: 50vw;
     width: 50vw;
@@ -262,6 +258,36 @@ div.subHeadFullData{
   div.aboutHeader div.textAnimation h1{
     font-weight: 490;
     font-size: 1.9rem;
+  }
+
+  div.data div.dataCards div.card {
+    height: 47%;
+    width: 60%;
+   } 
+
+   div.card div.cardHead {
+    font-size: 1.1rem;
+  }
+
+    div.card div.cardsubHeader {
+      font-size: 0.9rem;
+   }
+
+   div.skills {
+    font-size: 1rem;
+    }
+
+    div.effeicency {
+      font-size: 1rem;
+    }
+
+    div.subHeadFullData {
+      font-size: 1.1rem;
+     }
+
+     div.subHeadFullData h1.education {
+      text-decoration: underline;
+      font-size: 1rem;
   }
 
 }
