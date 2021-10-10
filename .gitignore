@@ -12,6 +12,8 @@
 /build
 
 
+process.env
+
 /client/src/HartajSinghSidhu.jpg
 /client/src/AnyConv.com__Favicon.jpg
 

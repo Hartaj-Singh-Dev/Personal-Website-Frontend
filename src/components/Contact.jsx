@@ -39,7 +39,7 @@ const Contact = () => {
    }
     setuserData({name:'',email:'',phone:'',message:''})
 
-   await fetch(process.env.REACT_BACKEND_FORM,{
+   await fetch("http://localhost:8000/postData",{
      mode:'cors',
      method:"POST",
       headers:{
