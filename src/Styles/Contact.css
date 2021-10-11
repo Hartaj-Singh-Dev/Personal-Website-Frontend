@@ -229,7 +229,7 @@ div.contactform h2.contactFormHeading{
 /* Responsive */
 
 
-@media only screen and (max-width:450px){
+@media only screen and (max-width:600px){
     div.contactform{
         width: 95%;
         min-height: 50%;
@@ -281,6 +281,9 @@ div.contactform h2.contactFormHeading{
         width: 80%;
         text-align: center;
         font-size: 0.7rem;
+    }
+    div.contactForm form div.TextAreaInput textarea{
+        font-size: 1rem;
     }
     
 

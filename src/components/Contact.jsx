@@ -5,7 +5,7 @@ import { IconButton } from "@material-ui/core";
 import { Link } from "react-scroll";
 import * as EmailValidator from 'email-validator';
 import "../Styles/Contact.css";
-require('dotenv').config({path:"../../config.env"})
+require('dotenv').config({path:"../../.env"})
 
 
 const Contact = () => {
@@ -43,7 +43,7 @@ const Contact = () => {
    }
     setuserData({name:'',email:'',phone:'',message:''})
 
-   await fetch(`${process.env.REACT_BACKEND_FORM}`,{
+   await fetch(process.env.REACT_APP_BACKEND_FORM,{
      mode:'cors',
      method:"POST",
       headers:{
