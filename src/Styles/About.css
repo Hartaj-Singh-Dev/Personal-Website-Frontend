@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 div.About {
-  height: 120vh;
+  height: 130vh;
   width: 100%;
   scroll-snap-align: start;
   position: relative;
@@ -32,7 +32,7 @@ div.data div.BioData p{
   width: 86%;
   white-space:pre-wrap;
   font-family: "Roboto Mono";
-  font-size: 1.4vw;
+  font-size: 1.3vw;
   font-weight: 599;
 }
 div.aboutHeader {
@@ -104,8 +104,8 @@ div.dataCards div.card{
   z-index: 1;
 }
 
-div.data p span::before{
-  content: "{Hartaj Singh}";
+div.data p span{
+  font-weight: 600;
 }
 
 /* Card CSS */
@@ -261,8 +261,8 @@ div.subHeadFullData{
   }
 
   div.data div.dataCards div.card {
-    height: 47%;
-    width: 60%;
+    height: 48%;
+    width: 65%;
    } 
 
    div.card div.cardHead {

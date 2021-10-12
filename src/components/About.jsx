@@ -10,7 +10,7 @@ import MyPic from "../Asset/AnyConv.com__Favicon.jpg";
 const About = () => {
   const [TypeEffect, setTypeEffect] = useState(false);
   const typeEffect = () => {
-    if (window.scrollY >= 550) {
+    if (window.scrollY >= 500) {
       setTypeEffect(true);
     } else {
       setTypeEffect(false);
@@ -28,7 +28,7 @@ const About = () => {
                   <Typewriter
                     onInit={(typewriter) => {
                       typewriter
-                        .pauseFor(80)
+                        // .pauseFor(00)
                         .pasteString(" Hi 👋,Myself ")
                         .typeString(
                           "<strong style={{fontWeight:'695'}}> Hartaj Singh </strong> "
@@ -64,20 +64,11 @@ const About = () => {
             <div className="data">
               <div className="BioData">
               <p>
-                So as you already know my name
-                <span>
-                  ,I am Currenly mastering full-stack web development and
-                  business management .
-                </span>
-                 So over last year, I’ve invested time in working on what
-                interests me .I recently worked on project of Instagram clone
-                and a few extra exciting projects,you could take a look at my
-                Github also . I even have additionally try and learn about
-                Businesses and Finances.
-                Lorem ipsum dolor sit amet consectetur 
+               <span>Hartaj Singh</span> ,<span>Founder</span> of<a target="_blank" href="https://www.linkedin.com/company/elit-dynamon"> Elit Dyanmon</a> and a <span> Programmer </span>
+                ,So over the last one and half year, I've invested my time my most of time in what keeps me up at night from Graphic Desgining  to <span>programming</span> to finance and to <span>Entrepreneurship</span> ,I've got my hands 
+                dirty in diverse skills.Worked with tons of projects with different <span>web technologies</span>(all available at <a target="_blank" href="https://github.com/Hartaj-singh-dev">GitHub</a>) and some of them are mentioned below.
+                and at the end this process of never stop learning will be on loop for lifetime.
 
-
-             
               </p>
                </div>
               <div className="dataCards">
