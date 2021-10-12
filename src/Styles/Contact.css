@@ -229,7 +229,7 @@ div.contactform h2.contactFormHeading{
 /* Responsive */
 
 
-@media only screen and (max-width:600px){
+@media all and (max-width:600px){
     div.contactform{
         width: 95%;
         min-height: 50%;
